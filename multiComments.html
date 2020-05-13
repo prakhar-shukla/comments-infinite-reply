@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MultiComments</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="./multiComments.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="multi-comment-wrapper">
+            <div class="new-comment-box">
+                <div class="comment-edit-box">
+                    <textarea type="text" placeholder="Enter comment"></textarea>
+                    <button class="save-new-comment-btn">Save</button>
+                </div>
+            </div>
+            <div class="comment-list">
+            </div>
+        </div>
+    </div>
+
+    <template class="reply-comment-box">
+        <div class="comment-edit-box">
+            <textarea type="text" placeholder="Enter comment"></textarea>
+            <div class="action">
+                <button class="cancel-comment-btn">Cancel</button>
+                <button class="save-comment-btn">Save</button>
+            </div>
+
+        </div>
+    </template>
+    <template class="new-comment-template">
+        <div class="comment-card">
+            <div class="content">This is a dummy comment</div>
+            <div class="action set-1">
+                <span class="comment-edit-btn">Edit</span>
+                <span class="comment-delete-btn">Delete</span>
+                <span class="comment-reply-btn">Reply</span>
+            </div>
+            <div class="action set-2" hidden>
+                    <button class="cancel-comment-btn">Cancel</button>
+                    <button class="save-comment-btn">Save</button>
+                </div>
+            <div class="replies"></div>
+        </div>
+    </template>
+
+
+    <script src="./multiComments.js"></script>
+</body>
+
+</html>
